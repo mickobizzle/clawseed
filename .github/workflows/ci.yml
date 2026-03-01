@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  safety-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Safety scan
+        run: ./scripts/safety_scan.sh
+
+      - name: Validate seed
+        run: ./scripts/validate_seed.sh
+
+      - name: Basic markdown link smoke test
+        run: |
+          python3 - <<'PY'
+          import os,re,sys
+          bad=[]
+          for root,_,files in os.walk('.'):
+            if '.git' in root: continue
+            for fn in files:
+              if not fn.endswith('.md'): continue
+              p=os.path.join(root,fn)
+              txt=open(p,encoding='utf-8').read()
+              for m in re.findall(r'\(([^)]+)\)',txt):
+                if m.startswith('http') or m.startswith('#') or m.startswith('mailto:'):
+                  continue
+                m=m.split('#')[0]
+                if not m: continue
+                tgt=os.path.normpath(os.path.join(root,m))
+                if not os.path.exists(tgt):
+                  bad.append((p,m))
+          if bad:
+            print('Broken local links:')
+            for p,m in bad[:100]: print(f'{p} -> {m}')
+            sys.exit(1)
+          print('Markdown link smoke test passed')
+          PY

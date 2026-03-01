@@ -20,3 +20,9 @@ A public starter kit for building your own "claw": an agentic wrapper around LLM
 - Weekly review portable checklist template
 - Bootstrap + safety scan scripts
 - OpenClaw adapter example
+
+## v0.3 additions
+- CONTRIBUTING.md
+- SECURITY.md
+- CODE_OF_CONDUCT.md
+- GitHub Actions CI (safety + validate + markdown link smoke test)
