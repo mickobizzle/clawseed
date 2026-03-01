@@ -1,0 +1,8 @@
+adapter:
+  name: openclaw
+  version: "<set-at-deploy>"
+  health_check: "openclaw status"
+  logs_path: "./runtime/logs"
+  schedules_path: "./runtime/state"
+  message_channels:
+    - telegram

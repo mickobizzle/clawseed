@@ -13,3 +13,10 @@ A public starter kit for building your own "claw": an agentic wrapper around LLM
 - Topic hubs
 - Zettelkasten corpus
 - Private logs, inboxes, or identifiers
+
+## v0.2 additions
+- Wrapper adapter contract template
+- Secrets and channels setup templates
+- Weekly review portable checklist template
+- Bootstrap + safety scan scripts
+- OpenClaw adapter example
