@@ -1,0 +1,26 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6A3D"/>
+      <stop offset="45%" stop-color="#FF3D77"/>
+      <stop offset="100%" stop-color="#8D5CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" rx="36" fill="url(#g)"/>
+
+  <!-- Left mascot -->
+  <g transform="translate(220,250) scale(0.8)">
+    <ellipse cx="0" cy="60" rx="95" ry="120" fill="#FFD7C2"/>
+    <ellipse cx="0" cy="15" rx="65" ry="62" fill="#FFF1EA"/>
+    <circle cx="-28" cy="-6" r="12" fill="#1C1C2A"/>
+    <circle cx="28" cy="-6" r="12" fill="#1C1C2A"/>
+    <path d="M-42 38 Q0 74 42 38" stroke="#1C1C2A" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-120" cy="56" rx="34" ry="28" fill="#FFE8DC"/>
+    <ellipse cx="120" cy="56" rx="34" ry="28" fill="#FFE8DC"/>
+  </g>
+
+  <text x="430" y="220" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="94" font-weight="800" fill="#FFFFFF">ClawSeed</text>
+  <text x="435" y="286" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="34" font-weight="500" fill="#FFEFF7">Build your own agentic claw, safely.</text>
+
+  <text x="435" y="340" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="24" font-weight="500" fill="#FFDDEB">Portable wrapper • Privacy-first templates • Weekly review discipline</text>
+</svg>

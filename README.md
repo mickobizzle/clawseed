@@ -93,3 +93,9 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). Please keep submissions generic, reu
 
 ## Security
 See [`SECURITY.md`](./SECURITY.md).
+
+## Branding kit
+A starter visual identity is included under [`branding/`](./branding):
+- smiling lobster avatar
+- banner
+- icon
